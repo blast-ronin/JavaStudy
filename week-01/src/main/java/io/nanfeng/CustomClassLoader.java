@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class CustomClassLoader extends ClassLoader {
-    String prefix = "/Users/nanfeng/IdeaProjects/java0/resources/";
+    String prefix = System.getProperty("java.class.path")+File.separator;
 
     String suffix = ".xlass";
 
